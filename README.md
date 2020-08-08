@@ -27,3 +27,4 @@ are always available and will track your progress.
 * Day 3: Part 1 & 2
 * Day 4: Part 1 & 2
 * Day 5: Part 1 & 2
+* Day 6: Part 1 & 2
