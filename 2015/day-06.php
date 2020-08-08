@@ -44,7 +44,8 @@ print("There were " . $houseLights->lightsLit() . " lights lit.\n");
  *
  * The phrase turn on actually means that you should increase the brightness of those lights by 1.
  *
- * The phrase turn off actually means that you should decrease the brightness of those lights by 1, to a minimum of zero.
+ * The phrase turn off actually means that you should decrease the brightness of those lights by 1, to a
+ * minimum of zero.
  *
  * The phrase toggle actually means that you should increase the brightness of those lights by 2.
  *

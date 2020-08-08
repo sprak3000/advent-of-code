@@ -7,7 +7,7 @@ use Exception;
 /**
  * Class HouseLights
  * @package adventofcode\Year2015
- * @todo Should really be checking the supplied coordinates for validity -- between 0 and 999, x/y pairs make sense, etc.
+ * @todo Should really check the supplied coordinates for validity -- between 0 and 999, x/y pairs make sense, etc.
  */
 class HouseLights
 {
