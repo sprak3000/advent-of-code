@@ -10,7 +10,9 @@
     "autoload": {
         "psr-4": {
             "adventofcode\\Year2015\\": "2015/src/",
-            "adventofcode\\Year2015\\Test\\": "2015/tests/"
+            "adventofcode\\Year2015\\Test\\": "2015/tests/",
+            "adventofcode\\Year2020\\": "2020/src/",
+            "adventofcode\\Year2020\\Test\\": "2020/tests/"
         }
     }
 }
