@@ -7,6 +7,7 @@ are always available and will track your progress.
 ## Solved Puzzles
 ### 2020
 * Day 1: Part 1 & 2
+* Day 2: Part 1 & 2
 
 ### 2019
 * Day 1: Part 1 & 2

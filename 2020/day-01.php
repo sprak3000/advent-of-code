@@ -61,4 +61,5 @@ print('The numbers ' . $result[0] . ' and ' . $result[1] . ' add up to 2020. The
 
 $result = $expenseReport->findThreeThatSumsTo($sumToFind, $input);
 $product = $result[0] * $result[1] * $result[2];
-print('The numbers ' . $result[0] . ', ' . $result[1] . ', and ' . $result[2] . ' add up to 2020. Their product is ' . $product . "\n");
+print('The numbers ' . $result[0] . ', ' . $result[1] . ', and ' . $result[2] . ' add up to 2020. Their product is ' .
+    $product . "\n");
