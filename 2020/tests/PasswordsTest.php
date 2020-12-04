@@ -52,7 +52,7 @@ class PasswordsTest extends TestCase
 
         // Day 2 Part 2 puzzle inputs
         $entries = file(__DIR__ . '/../inputs/day-02.input', FILE_IGNORE_NEW_LINES);
-        $result = $this->passwords->validSledRentalPasswords($entries);
+        $result = $this->passwords->validTobogganCorporatePasswords($entries);
 
         $this->assertCount(686, $result);
     }
