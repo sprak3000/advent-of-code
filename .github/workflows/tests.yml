@@ -29,4 +29,5 @@ jobs:
         run: composer require --no-update --dev phpunit/phpunit:^9.3 --quiet
         if: "matrix.php == '8.0'"
       - run: composer update --quiet ${{ matrix.composer-flags }}
-      - run: vendor/bin/phpunit --coverage-text --coverage-clover build/logs/clover.xml
+      - run: vendor/bin/phpunit 2015
+      - run: vendor/bin/phpunit 2020
