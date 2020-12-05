@@ -9,6 +9,7 @@ jobs:
     name: PHPUnit on ${{ matrix.php }} ${{ matrix.composer-flags }}
     runs-on: ubuntu-latest
     strategy:
+      max-parallel: 2
       matrix:
         php: ['7.3', '7.4']
         coverage: [true]
