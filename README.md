@@ -9,6 +9,7 @@ are always available and will track your progress.
 * Day 1: Part 1 & 2
 * Day 2: Part 1 & 2
 * Day 3: Part 1 & 2
+* Day 4: Part 1 & 2
 
 ### 2019
 * Day 1: Part 1 & 2
