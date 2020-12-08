@@ -54,26 +54,27 @@ class Passports
 
         $pattern = '/byr:([^ ]+) (cid:[^ ]+ )?ecl:[^ ]+ eyr:([^ ]+) hcl:[^ ]+ hgt:([^ ]+) iyr:([^ ]+) pid:.+/';
         if ($strict) {
-            // byr:1974 ecl:oth eyr:2029 hcl:#623a2f hgt:161cm iyr:2018 pid:6826285172
             $pattern = '/byr:(\d{4}) (cid:[^ ]+ )?ecl:(amb|blu|brn|gry|grn|hzl|oth) eyr:(\d{4}) hcl:#[0-9a-f]{6} hgt:(\d+)(in|cm) iyr:(\d{4}) pid:\d{9}$/';
         }
 
         foreach ($passports as $passport) {
             $matched = (preg_match($pattern, $passport, $matches) === 1);
 
-            $byr = $matches[1];
-            $eyr = $matches[4];
-            $hgt = $matches[5];
-            $hgtType = $matches[6];
-            $iyr = $matches[7];
-
             if ($matched && !$strict) {
                 $valid[] = $passport;
             }
 
-            if ($matched && $strict && $this->validBirthYear($byr) && $this->validExpirationYear($eyr) && $this->validHeight($hgt,
-                    $hgtType) && $this->validIssueYear($iyr)) {
-                $valid[] = $passport;
+            if ($matched && $strict) {
+                $byr = $matches[1];
+                $eyr = $matches[4];
+                $hgt = $matches[5];
+                $hgtType = $matches[6];
+                $iyr = $matches[7];
+
+                if ($this->validBirthYear($byr) && $this->validExpirationYear($eyr) &&
+                    $this->validHeight($hgt, $hgtType) && $this->validIssueYear($iyr)) {
+                    $valid[] = $passport;
+                }
             }
         }
 
