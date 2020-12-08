@@ -17,7 +17,7 @@ class PresentDelivery
         $y = 0;
 
         // Deliver present to first house
-        $map[$x . ',' . $y]++;
+        $map[$x . ',' . $y] = 1;
 
         $directions = str_split($routeMap);
         foreach ($directions as $direction) {
@@ -98,7 +98,14 @@ class PresentDelivery
             }
 
             // Deliver present to new houses
+            if (!array_key_exists($santaX . ',' . $santaY, $map)) {
+                $map[$santaX . ',' . $santaY] = 0;
+            }
             $map[$santaX . ',' . $santaY]++;
+
+            if (!array_key_exists($roboSantaX . ',' . $roboSantaY, $map)) {
+                $map[$roboSantaX . ',' . $roboSantaY] = 0;
+            }
             $map[$roboSantaX . ',' . $roboSantaY]++;
         }
 

@@ -15,7 +15,7 @@ class HouseLights
      * Map of lights to track on / off / brightness
      * @var int
      */
-    protected $lights = [1000][1000];
+    protected $lights = [];
 
     /** @var int */
     protected $lightsLit = 0;
