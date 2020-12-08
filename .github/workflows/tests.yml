@@ -1,0 +1,35 @@
+name: Run tests
+
+on:
+  push:
+  pull_request:
+    branches:
+      - master
+
+jobs:
+  tests:
+    runs-on: ${{ matrix.os }}
+
+    strategy:
+      matrix:
+        php: [8.0, 7.4, 7.3]
+        os: [ubuntu-latest]
+
+    name: PHP ${{ matrix.php }} - Tests
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v1
+
+      - name: Setup PHP
+        uses: shivammathur/setup-php@v2
+        with:
+          php-version: ${{ matrix.php }}
+          extensions: dom, curl, libxml, mbstring, zip, pcntl, intl
+
+      - name: Install dependencies
+        run: |
+          composer update --prefer-dist --no-interaction --no-suggest
+
+      - name: Run tests
+        run: vendor/bin/phpunit
