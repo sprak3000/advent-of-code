@@ -38,6 +38,9 @@ class PresentDelivery
             }
 
             // Deliver present to new house
+            if (!array_key_exists($x . ',' . $y, $map)) {
+                $map[$x . ',' . $y] = 0;
+            }
             $map[$x . ',' . $y]++;
         }
 

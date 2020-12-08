@@ -90,6 +90,9 @@ class HouseLights
 
             for ($y = $this->startY; $y <= $this->endY; $y++) {
                 for ($x = $this->startX; $x <= $this->endX; $x++) {
+                    if (!array_key_exists($x, $this->lights) || !array_key_exists($y, $this->lights[$x])) {
+                        $this->lights[$x][$y] = 0;
+                    }
                     $lightOn = $this->lights[$x][$y] === 1;
 
                     switch ($this->currentInstruction) {
@@ -135,6 +138,9 @@ class HouseLights
      */
     protected function increaseBrightness(int $x, int $y, int $amount)
     {
+        if (!array_key_exists($x, $this->lights) || !array_key_exists($y, $this->lights[$x])) {
+            $this->lights[$x][$y] = 0;
+        }
         if ($this->lights[$x][$y] === 0) {
             $this->lightsLit++;
         }
