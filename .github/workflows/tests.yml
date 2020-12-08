@@ -32,4 +32,6 @@ jobs:
           composer update --prefer-dist --no-interaction --no-suggest
 
       - name: Run tests
-        run: vendor/bin/phpunit
+        run: |
+          vendor/bin/phpunit 2015
+          vendor/bin/phpunit 2020
