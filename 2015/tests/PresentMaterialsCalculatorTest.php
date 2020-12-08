@@ -26,7 +26,7 @@ class PresentMaterialsCalculatorTest extends TestCase
         $this->assertSame(14, $this->calculator->getRibbonFeet());
 
         // Day 2 puzzle input
-        $input = file(__DIR__ . '/../inputs/day-02.input');
+        $input = file(__DIR__ . '/../inputs/day-02.input', FILE_IGNORE_NEW_LINES | FILE_SKIP_EMPTY_LINES);
         $this->calculator->calculate($input);
         $this->assertSame(1586300, $this->calculator->getWrappingPaperSquareFeet());
         $this->assertSame(3737498, $this->calculator->getRibbonFeet());
