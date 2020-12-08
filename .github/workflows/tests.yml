@@ -16,7 +16,7 @@ jobs:
         os: [ubuntu-latest]
         year: [2015, 2020]
 
-    name: PHP ${{ matrix.php }} - Tests
+    name: PHP ${{ matrix.php }} - Unit Tests for Year ${{ matrix.year }}
 
     steps:
       - name: Checkout code
