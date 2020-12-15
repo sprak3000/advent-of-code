@@ -23,18 +23,23 @@ class CustomsForms
 
         $formsFile = fopen($filePath, 'r');
 
-        $formsText = '';
+        $groupID = 0;
+        $group = [];
+
         while (($currentLine = fgets($formsFile)) !== false) {
-            $formsText .= trim($currentLine);
+            if ($currentLine !== "\n") {
+                $group[] = trim($currentLine);
+            }
 
             if ($currentLine === "\n") {
-                $forms[] = $formsText;
-                $formsText = '';
+                $forms[$groupID] = $group;
+                $group = [];
+                $groupID++;
             }
         }
 
         // Close out last passport.
-        $forms[] = $formsText;
+        $forms[$groupID] = $group;
 
         fclose($formsFile);
 
@@ -42,7 +47,7 @@ class CustomsForms
     }
 
     /**
-     * Given an array of customs forms, return the amount of "yes" responses.
+     * Given an array of customs forms organized by groups, return the amount of "yes" responses from everyone.
      *
      * @param array $forms
      * @return int
@@ -51,8 +56,39 @@ class CustomsForms
     {
         $yesResponses = 0;
 
-        foreach ($forms as $form) {
-            $yesResponses += count(array_unique(str_split($form)));
+        foreach ($forms as $group) {
+            $formText = implode($group);
+            $yesResponses += count(array_unique(str_split($formText)));
+        }
+
+        return $yesResponses;
+    }
+
+    /**
+     * Given an array of customs forms organized by groups, return the amount of "yes" responses everyone made for each
+     * question.
+     *
+     * @param array $forms
+     * @return int
+     */
+    public function everyoneYesResponses(array $forms): int
+    {
+        $yesResponses = 0;
+
+        foreach ($forms as $group) {
+            $data = [];
+            foreach ($group as $form) {
+                $data[] = str_split($form);
+            }
+
+            switch (count($data)) {
+                case 1:
+                    $yesResponses += count($data[0]);
+                    break;
+                default:
+                    $yesResponses += count(array_intersect(...$data));
+                    break;
+            }
         }
 
         return $yesResponses;
