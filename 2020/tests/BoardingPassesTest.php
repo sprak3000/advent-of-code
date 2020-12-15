@@ -72,10 +72,10 @@ class BoardingPassesTest extends TestCase
 
         $this->assertSame(820, $id);
 
-        // Day 2 Part 1 puzzle inputs
-//        $entries = file(__DIR__ . '/../inputs/day-02.input', FILE_IGNORE_NEW_LINES);
-//        $result = $this->passwords->validSledRentalPasswords($entries);
-//
-//        $this->assertCount(477, $result);
+        // Day 5 Part 1 puzzle inputs
+        $passes = file(__DIR__ . '/../inputs/day-05.input', FILE_SKIP_EMPTY_LINES | FILE_IGNORE_NEW_LINES);
+        $id = $this->boardingPasses->findHighestSeatID($passes);
+
+        $this->assertSame(906, $id);
     }
 }
