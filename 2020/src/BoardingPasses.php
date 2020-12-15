@@ -109,6 +109,7 @@ class BoardingPasses
         foreach ($ids as $id) {
             if ($id - $previous > 1) {
                 $myID = $id - 1;
+                break;
             }
 
             $previous = $id;
