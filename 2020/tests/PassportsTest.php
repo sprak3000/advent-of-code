@@ -27,6 +27,12 @@ class PassportsTest extends TestCase
         $this->assertCount(4, $passports);
     }
 
+    public function testImportException()
+    {
+        $this->expectException(Exception::class);
+        $this->passports->import(__DIR__ . '/../inputs/not-a.file');
+    }
+
     public function testValidate()
     {
         // Day 4 sample inputs
