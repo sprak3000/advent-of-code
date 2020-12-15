@@ -78,4 +78,13 @@ class BoardingPassesTest extends TestCase
 
         $this->assertSame(906, $id);
     }
+
+    public function testFindMyID()
+    {
+        // Day 5 Part 1 puzzle inputs
+        $passes = file(__DIR__ . '/../inputs/day-05.input', FILE_SKIP_EMPTY_LINES | FILE_IGNORE_NEW_LINES);
+        $id = $this->boardingPasses->findMySeat($passes);
+
+        $this->assertSame(519, $id);
+    }
 }

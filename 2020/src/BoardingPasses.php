@@ -86,4 +86,34 @@ class BoardingPasses
 
         return $highestID;
     }
+
+    /**
+     * Given an array of boarding pass data, return my seat ID.
+     *
+     * @param array $passes
+     * @return int
+     */
+    public function findMySeat(array $passes): int
+    {
+        $myID = 0;
+        $ids = [];
+
+        foreach ($passes as $pass) {
+            $data = $this->computeSeatData($pass);
+            $ids[] = $data['id'];
+        }
+
+        sort($ids);
+
+        $previous = $ids[0];
+        foreach ($ids as $id) {
+            if ($id - $previous > 1) {
+                $myID = $id - 1;
+            }
+
+            $previous = $id;
+        }
+
+        return $myID;
+    }
 }

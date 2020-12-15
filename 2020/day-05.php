@@ -76,3 +76,7 @@ print("The highest seat ID is {$id}.\n");
  *
  * What is the ID of your seat?
  */
+
+$id = $boardingPasses->findMySeat($passes);
+
+print("My seat ID is {$id}.\n");
