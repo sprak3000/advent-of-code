@@ -11,6 +11,8 @@
         "psr-4": {
             "adventofcode\\Year2015\\": "2015/src/",
             "adventofcode\\Year2015\\Test\\": "2015/tests/",
+            "adventofcode\\Year2018\\": "2018/src/",
+            "adventofcode\\Year2018\\Test\\": "2018/tests/",
             "adventofcode\\Year2019\\": "2019/src/",
             "adventofcode\\Year2019\\Test\\": "2019/tests/",
             "adventofcode\\Year2020\\": "2020/src/",

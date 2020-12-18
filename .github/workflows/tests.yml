@@ -14,7 +14,7 @@ jobs:
       matrix:
         php: [ 8.0, 7.4, 7.3 ]
         os: [ ubuntu-latest ]
-        year: [ 2015, 2019, 2020 ]
+        year: [ 2015, 2018, 2019, 2020 ]
 
     name: PHP ${{ matrix.php }} - Unit Tests for Year ${{ matrix.year }}
 
