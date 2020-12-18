@@ -25,15 +25,17 @@ class IntCode
         $halt = false;
 
         do {
-            $input1 = $instructions[$instructions[$index + 1]];
-            $input2 = $instructions[$instructions[$index + 2]];
-            $storeIndex = $instructions[$index + 3];
-
             switch ($instructions[$index]) {
                 case self::ADDOPCODE:
+                    $input1 = $instructions[$instructions[$index + 1]];
+                    $input2 = $instructions[$instructions[$index + 2]];
+                    $storeIndex = $instructions[$index + 3];
                     $instructions[$storeIndex] = $input1 + $input2;
                     break;
                 case self::MULTIPLYOPCODE:
+                    $input1 = $instructions[$instructions[$index + 1]];
+                    $input2 = $instructions[$instructions[$index + 2]];
+                    $storeIndex = $instructions[$index + 3];
                     $instructions[$storeIndex] = $input1 * $input2;
                     break;
                 case self::HALTOPCODE:
