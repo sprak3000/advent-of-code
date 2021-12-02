@@ -6,6 +6,10 @@ Every year, the site puts out a daily pair of holiday themed puzzles starting on
 are always available and will track your progress.
 
 ## Solved Puzzles
+
+### 2021
+* Day 1: Part 1 & 2
+
 ### 2020
 * Day 1: Part 1 & 2
 * Day 2: Part 1 & 2
@@ -29,6 +33,8 @@ are always available and will track your progress.
 * Day 2: Part 1 & 2
 * Day 4: Part 1 & 2
 * Day 5: Part 1 & 2
+
+### 2016
 
 ### 2015
 * Day 1: Part 1 & 2
