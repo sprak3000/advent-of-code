@@ -16,7 +16,9 @@
             "adventofcode\\Year2019\\": "2019/src/",
             "adventofcode\\Year2019\\Test\\": "2019/tests/",
             "adventofcode\\Year2020\\": "2020/src/",
-            "adventofcode\\Year2020\\Test\\": "2020/tests/"
+            "adventofcode\\Year2020\\Test\\": "2020/tests/",
+            "adventofcode\\Year2021\\": "2021/src/",
+            "adventofcode\\Year2021\\Test\\": "2021/tests/"
         }
     }
 }
