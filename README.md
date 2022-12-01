@@ -3,9 +3,13 @@
 
 This repository holds my attempts at solving the puzzles put forth by the annual [Advent of Code](https://adventofcode.com/).
 Every year, the site puts out a daily pair of holiday themed puzzles starting on December 1. The puzzles for each year
-are always available and will track your progress.
+are always available and will track your progress. I am currently using PHP for solutions in an attempt to stay on top
+of changes and trends in that community.
 
 ## Solved Puzzles
+
+### 2022
+* Day 1: Part 1 & 2
 
 ### 2021
 * Day 1: Part 1 & 2

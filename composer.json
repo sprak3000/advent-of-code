@@ -18,7 +18,14 @@
             "adventofcode\\Year2020\\": "2020/src/",
             "adventofcode\\Year2020\\Test\\": "2020/tests/",
             "adventofcode\\Year2021\\": "2021/src/",
-            "adventofcode\\Year2021\\Test\\": "2021/tests/"
+            "adventofcode\\Year2021\\Test\\": "2021/tests/",
+            "adventofcode\\Year2022\\": "2022/src/",
+            "adventofcode\\Year2022\\Test\\": "2022/tests/"
+        }
+    },
+    "config": {
+        "allow-plugins": {
+            "ergebnis/composer-normalize": true
         }
     }
 }
