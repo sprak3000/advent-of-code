@@ -8,8 +8,8 @@ use PHPUnit\Framework\TestCase;
 class CalorieCounterTest extends TestCase
 {
     protected CalorieCounter $calorieCounter;
-    protected $sampleCalories;
-    protected $calories;
+    protected array|false $sampleCalories;
+    protected array|false $calories;
 
     protected function setup(): void
     {

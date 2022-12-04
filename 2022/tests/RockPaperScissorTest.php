@@ -8,8 +8,8 @@ use PHPUnit\Framework\TestCase;
 class RockPaperScissorTest extends TestCase
 {
     protected RockPaperScissor $rockPaperScissor;
-    protected $sampleStrategy;
-    protected $strategy;
+    protected array|false $sampleStrategy;
+    protected array|false $strategy;
 
     protected function setup(): void
     {
