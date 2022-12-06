@@ -14,6 +14,7 @@ of changes and trends in that community.
 * Day 3: Part 1 & 2
 * Day 4: Part 1 & 2
 * Day 5: Part 1 & 2
+* Day 6: Part 1 & 2
 
 ### 2021
 * Day 1: Part 1 & 2
