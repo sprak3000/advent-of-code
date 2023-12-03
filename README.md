@@ -11,6 +11,7 @@ of changes and trends in that community.
 
 ### 2023
 * Day 1: Part 1 & 2
+* Day 2: Part 1 & 2
 
 ### 2022
 * Day 1: Part 1 & 2
