@@ -7,55 +7,32 @@ Every year, the site puts out a daily pair of holiday themed puzzles starting on
 are always available and will track your progress. I am currently using PHP for solutions in an attempt to stay on top
 of changes and trends in that community.
 
-## Solved Puzzles
+## Puzzle progress
 
-### 2023
-* Day 1: Part 1 & 2
-* Day 2: Part 1 & 2
-
-### 2022
-* Day 1: Part 1 & 2
-* Day 2: Part 1 & 2
-* Day 3: Part 1 & 2
-* Day 4: Part 1 & 2
-* Day 5: Part 1 & 2
-* Day 6: Part 1 & 2
-
-### 2021
-* Day 1: Part 1 & 2
-* Day 2: Part 1 & 2
-* Day 3: Part 1 & 2
-
-### 2020
-* Day 1: Part 1 & 2
-* Day 2: Part 1 & 2
-* Day 3: Part 1 & 2
-* Day 4: Part 1 & 2
-* Day 5: Part 1 & 2
-* Day 6: Part 1 & 2
-
-### 2019
-* Day 1: Part 1 & 2
-* Day 2: Part 1
-
-### 2018
-* Day 1: Part 1 & 2
-* Day 2: Part 1 & 2
-* Day 3: Part 1 & 2
-* Day 4: Part 1 & 2
-
-### 2017
-* Day 1: Part 1 & 2
-* Day 2: Part 1 & 2
-* Day 4: Part 1 & 2
-* Day 5: Part 1 & 2
-
-### 2016
-
-### 2015
-* Day 1: Part 1 & 2
-* Day 2: Part 1 & 2
-* Day 3: Part 1 & 2
-* Day 4: Part 1 & 2
-* Day 5: Part 1 & 2
-* Day 6: Part 1 & 2
+|        |     2023      |     2022      |     2021      |     2020      |     2019      |     2018      |     2017      | 2016 |     2015      |
+|-------:|:-------------:|:-------------:|:-------------:|:-------------:|:-------------:|:-------------:|:-------------:|:----:|:-------------:|
+| Day 01 | :star: :star: | :star: :star: | :star: :star: | :star: :star: | :star: :star: | :star: :star: | :star: :star: |      | :star: :star: |
+| Day 02 | :star: :star: | :star: :star: | :star: :star: | :star: :star: |    :star:     | :star: :star: | :star: :star: |      | :star: :star: |
+| Day 03 |               | :star: :star: | :star: :star: | :star: :star: |               | :star: :star: | :star: :star: |      | :star: :star: |
+| Day 04 |               | :star: :star: |               | :star: :star: |               | :star: :star: | :star: :star: |      | :star: :star: |
+| Day 05 |               | :star: :star: |               | :star: :star: |               |               | :star: :star: |      | :star: :star: |
+| Day 06 |               | :star: :star: |               | :star: :star: |               |               |               |      | :star: :star: |
+| Day 07 |               |               |               |               |               |               |               |      |               |
+| Day 08 |               |               |               |               |               |               |               |      |               |
+| Day 09 |               |               |               |               |               |               |               |      |               |
+| Day 10 |               |               |               |               |               |               |               |      |               |
+| Day 11 |               |               |               |               |               |               |               |      |               |
+| Day 12 |               |               |               |               |               |               |               |      |               |
+| Day 13 |               |               |               |               |               |               |               |      |               |
+| Day 14 |               |               |               |               |               |               |               |      |               |
+| Day 15 |               |               |               |               |               |               |               |      |               |
+| Day 16 |               |               |               |               |               |               |               |      |               |
+| Day 17 |               |               |               |               |               |               |               |      |               |
+| Day 18 |               |               |               |               |               |               |               |      |               |
+| Day 19 |               |               |               |               |               |               |               |      |               |
+| Day 20 |               |               |               |               |               |               |               |      |               |
+| Day 21 |               |               |               |               |               |               |               |      |               |
+| Day 22 |               |               |               |               |               |               |               |      |               |
+| Day 23 |               |               |               |               |               |               |               |      |               |
+| Day 24 |               |               |               |               |               |               |               |      |               |
+| Day 25 |               |               |               |               |               |               |               |      |               |
