@@ -20,7 +20,7 @@ of changes and trends in that community.
 | Day 07 |               |               |               |               |               |               |               |      |               |
 | Day 08 |               |               |               |               |               |               |               |      |               |
 | Day 09 |               |               |               |               |               |               |               |      |               |
-| Day 10 |               |               |               |               |               |               |               |      |               |
+| Day 10 |               |               |               |               |               |               |               |      | :star: :star: |
 | Day 11 |               |               |               |               |               |               |               |      |               |
 | Day 12 |               |               |               |               |               |               |               |      |               |
 | Day 13 |               |               |               |               |               |               |               |      |               |
