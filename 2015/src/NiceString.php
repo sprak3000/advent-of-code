@@ -4,8 +4,8 @@ namespace adventofcode\Year2015;
 
 class NiceString
 {
-    const MODE_V1 = 'v1';
-    const MODE_V2 = 'v2';
+    public const MODE_V1 = 'v1';
+    public const MODE_V2 = 'v2';
 
     /**
      * Determines if the input contains a naughty string.
@@ -104,8 +104,10 @@ class NiceString
     {
         switch ($mode) {
             case self::MODE_V2:
-                if ($this->containsMultipleLetterPairs($input) &&
-                    $this->containsDuplicateLetterWithOneCharacterBetween($input)) {
+                if (
+                    $this->containsMultipleLetterPairs($input) &&
+                    $this->containsDuplicateLetterWithOneCharacterBetween($input)
+                ) {
                     return true;
                 }
 
