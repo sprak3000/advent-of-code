@@ -24,7 +24,7 @@ of changes and trends in that community.
 | Day 11 |               |               |               |               |               |               |               |      |               |
 | Day 12 |               |               |               |               |               |               |               |      |               |
 | Day 13 |               |               |               |               |               |               |               |      |               |
-| Day 14 |               |               |               |               |               |               |               |      |               |
+| Day 14 |               |               |               |               |               |               |               |      | :star: :star: |
 | Day 15 |               |               |               |               |               |               |               |      |               |
 | Day 16 |               |               |               |               |               |               |               |      |               |
 | Day 17 |               |               |               |               |               |               |               |      |               |
