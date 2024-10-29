@@ -38,7 +38,6 @@ class StringParserTest extends TestCase
 
         // Day 8 Part 2 inputs
         $result = $this->stringParser->computeEncodedStringUsage($this->input);
-        // 1998 is too low, 2093 is too high?, 2118 is not right, 2384 is too high, 2086 also wrong, 2117???
         $this->assertEquals(2117, $result['charactersOfEncodedStrings'] - $result['charactersOfStringCode']);
     }
 }
