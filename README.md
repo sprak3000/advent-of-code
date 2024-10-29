@@ -18,7 +18,7 @@ of changes and trends in that community.
 | Day 05 |               | :star: :star: |               | :star: :star: |               |               | :star: :star: |      | :star: :star: |
 | Day 06 |               | :star: :star: |               | :star: :star: |               |               |               |      | :star: :star: |
 | Day 07 |               |               |               |               |               |               |               |      |               |
-| Day 08 |               |               |               |               |               |               |               |      |               |
+| Day 08 |               |               |               |               |               |               |               |      | :star: :star: |
 | Day 09 |               |               |               |               |               |               |               |      |               |
 | Day 10 |               |               |               |               |               |               |               |      | :star: :star: |
 | Day 11 |               |               |               |               |               |               |               |      |               |
