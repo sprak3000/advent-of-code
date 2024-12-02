@@ -4,8 +4,8 @@
         "ext-ctype": "*"
     },
     "require-dev": {
-        "ergebnis/composer-normalize": "2.39.0",
-        "phpunit/phpunit": "9.6.13",
+        "ergebnis/composer-normalize": "2.44.0",
+        "phpunit/phpunit": "11.4.4",
         "squizlabs/php_codesniffer": "3.7.2"
     },
     "autoload": {
@@ -23,7 +23,9 @@
             "adventofcode\\Year2022\\": "2022/src/",
             "adventofcode\\Year2022\\Test\\": "2022/tests/",
             "adventofcode\\Year2023\\": "2023/src/",
-            "adventofcode\\Year2023\\Test\\": "2023/tests/"
+            "adventofcode\\Year2023\\Test\\": "2023/tests/",
+            "adventofcode\\Year2024\\": "2024/src/",
+            "adventofcode\\Year2024\\Test\\": "2024/tests/"
         }
     },
     "config": {
