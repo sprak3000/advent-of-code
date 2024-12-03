@@ -20,30 +20,50 @@ class ReactorReportParser
         foreach ($reports as $report) {
             $levels = explode(' ', $report);
 
-            $previousChange = '';
-            $isSafeChange = true;
-            $dampenerUsed = false;
-
-            for ($i = 1; $i < count($levels); $i++) {
-                $previousLevel = $levels[$i - 1];
-                $currentLevel = $levels[$i];
-                $currentChange = $previousLevel < $currentLevel ? 'increase' : 'decrease';
-
-                $isSafeChange = $this->isSafeChange($previousLevel, $currentLevel, $previousChange, $currentChange);
-
-                if (!$isSafeChange) {
-                    break;
-                }
-
-                $previousChange = $currentChange;
-            }
-
-            if ($isSafeChange) {
+            if ($this->isSafeReport($levels, $applyProblemDampener)) {
                 $this->safeReportsCount++;
             }
         }
 
         return $this->safeReportsCount;
+    }
+
+    /**
+     * @param array $levels
+     * @param bool $applyProblemDampener
+     * @return bool
+     */
+    private function isSafeReport(array $levels, bool $applyProblemDampener = false): bool
+    {
+        $previousChange = '';
+
+        for ($i = 1; $i < count($levels); $i++) {
+            $previousLevel = $levels[$i - 1];
+            $currentLevel = $levels[$i];
+            $currentChange = $previousLevel < $currentLevel ? 'increase' : 'decrease';
+
+            $isSafeChange = $this->isSafeChange($previousLevel, $currentLevel, $previousChange, $currentChange);
+
+            if (!$isSafeChange && !$applyProblemDampener) {
+                return false;
+            }
+
+            if (!$isSafeChange && $applyProblemDampener) {
+                for ($j = 0; $j < count($levels); $j++) {
+                    $levelsWithoutOneLevel = $levels;
+                    array_splice($levelsWithoutOneLevel, $j, 1, []);
+                    if ($this->isSafeReport($levelsWithoutOneLevel)) {
+                        return true;
+                    }
+                }
+
+                return false;
+            }
+
+            $previousChange = $currentChange;
+        }
+
+        return true;
     }
 
     /**

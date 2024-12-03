@@ -85,5 +85,5 @@ print('There are ' . $count . " safe reports.\n");
  * How many reports are now safe?
  */
 
-//$count = $reactorReportParser->findSafeReportsCount($reports, true);
-//print('There are ' . $count . " safe reports after applying the Problem Dampener.\n");
+$count = $reactorReportParser->findSafeReportsCount($reports, true);
+print('There are ' . $count . " safe reports after applying the Problem Dampener.\n");

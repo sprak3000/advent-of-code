@@ -31,15 +31,12 @@ class ReactorReportParserTest extends TestCase
 
     public function testFindSafeReportsCountUsingProblemDampener()
     {
-        $this->markTestSkipped('TODO...');
-
         // Day 2 Part 2 example inputs
         $result = $this->reactorReportParser->findSafeReportsCount($this->sampleReports, true);
         $this->assertEquals(4, $result);
 
         // Day 2 Part 2 puzzle inputs
-        // 685 is too low
         $result = $this->reactorReportParser->findSafeReportsCount($this->reports, true);
-        $this->assertEquals(660, $result);
+        $this->assertEquals(689, $result);
     }
 }
