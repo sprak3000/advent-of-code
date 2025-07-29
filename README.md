@@ -1,6 +1,6 @@
 # Advent of Code
 
-![GitHub Workflow Status](https://img.shields.io/github/actions/workflow/status/sprak3000/advent-of-code/tests.yml?branch=master)
+![GitHub Workflow Status](https://img.shields.io/github/actions/workflow/status/sprak3000/advent-of-code/tests.yml?branch=main)
 
 This repository holds my attempts at solving the puzzles put forth by the annual [Advent of Code](https://adventofcode.com/).
 Every year, the site puts out a daily pair of holiday themed puzzles starting on December 1. The puzzles for each year
