@@ -33,7 +33,6 @@ class StringParserTest extends TestCase
     {
         // Day 8 Part 2 example inputs
         $result = $this->stringParser->computeEncodedStringUsage($this->sampleInput);
-        print_r($result);
         $this->assertEquals(19, $result['charactersOfEncodedStrings'] - $result['charactersOfStringCode']);
 
         // Day 8 Part 2 inputs

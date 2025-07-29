@@ -1,0 +1,22 @@
+# https://taskfile.dev
+
+version: '3'
+
+#vars:
+#  GREETING: Hello, World!
+
+tasks:
+#  default:
+#    cmds:
+#      - echo "{{.GREETING}}"
+#    silent: true
+
+  lint:*:
+    cmds:
+      - vendor/bin/phpcs --standard=PSR12 ./{{index .MATCH 0}}
+      - vendor/bin/phpcbf --standard=PSR12 ./{{index .MATCH 0}}
+      - vendor/bin/phpstan analyse ./{{index .MATCH 0}}
+
+  tests:*:
+    cmds:
+      - vendor/bin/phpunit {{index .MATCH 0}}/tests/
