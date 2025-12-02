@@ -12,11 +12,36 @@ tasks:
 #    silent: true
 
   lint:*:
+    vars:
+      YEAR: '{{index .MATCH 0}}'
     cmds:
-      - vendor/bin/phpcs --standard=PSR12 ./{{index .MATCH 0}}
-      - vendor/bin/phpcbf --standard=PSR12 ./{{index .MATCH 0}}
-      - vendor/bin/phpstan analyse ./{{index .MATCH 0}}
+      - vendor/bin/phpcs --standard=PSR12 ./{{.YEAR}}
+      - vendor/bin/phpcbf --standard=PSR12 ./{{.YEAR}}
+      - vendor/bin/phpstan analyse ./{{.YEAR}}
 
   tests:*:
+    vars:
+      YEAR: '{{index .MATCH 0}}'
     cmds:
-      - vendor/bin/phpunit {{index .MATCH 0}}/tests/
+      - vendor/bin/phpunit {{.YEAR}}/tests/
+
+  create-year:*:
+    vars:
+      YEAR: '{{index .MATCH 0}}'
+    cmds:
+      - mkdir -p {{.YEAR}}
+      - mkdir -p {{.YEAR}}/inputs
+      - mkdir -p {{.YEAR}}/src
+      - mkdir -p {{.YEAR}}/tests
+      - |
+        jq '.autoload."psr-4" += {"adventofcode\\Year{{.YEAR}}\\": "{{index .MATCH 0}}/src/", "adventofcode\\Year{{.YEAR}}\\Test\\": "{{index .MATCH 0}}/tests/"}' composer.json > temp.json && mv temp.json composer.json
+      - composer normalize
+
+  setup-day:*:*:
+    vars:
+      YEAR: '{{index .MATCH 0}}'
+      DAY: '{{index .MATCH 1}}'
+    cmds:
+      - touch {{.YEAR}}/day-{{.DAY}}.php
+      - touch {{.YEAR}}/inputs/day-{{.DAY}}.input
+      - touch {{.YEAR}}/inputs/day-{{.DAY}}-sample.input

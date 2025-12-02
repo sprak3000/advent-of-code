@@ -12,9 +12,9 @@ jobs:
 
     strategy:
       matrix:
-        php: [ 8.3, 8.4 ]
+        php: [ 8.3, 8.4, 8.5 ]
         os: [ ubuntu-latest ]
-        year: [ 2015, 2018, 2019, 2020, 2021, 2022, 2023, 2024 ]
+        year: [ 2015, 2018, 2019, 2020, 2021, 2022, 2023, 2024, 2025 ]
 
     name: Unit Tests for Year ${{ matrix.year }} (PHP ${{ matrix.php }})
 

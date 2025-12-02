@@ -1,37 +1,39 @@
 {
-    "require": {
-        "php": ">=8.1",
-        "ext-ctype": "*"
-    },
-    "require-dev": {
-        "ergebnis/composer-normalize": "2.47.0",
-        "phpunit/phpunit": "12.2.7",
-        "squizlabs/php_codesniffer": "3.7.2",
-        "phpstan/phpstan": "2.1.20"
-    },
-    "autoload": {
-        "psr-4": {
-            "adventofcode\\Year2015\\": "2015/src/",
-            "adventofcode\\Year2015\\Test\\": "2015/tests/",
-            "adventofcode\\Year2018\\": "2018/src/",
-            "adventofcode\\Year2018\\Test\\": "2018/tests/",
-            "adventofcode\\Year2019\\": "2019/src/",
-            "adventofcode\\Year2019\\Test\\": "2019/tests/",
-            "adventofcode\\Year2020\\": "2020/src/",
-            "adventofcode\\Year2020\\Test\\": "2020/tests/",
-            "adventofcode\\Year2021\\": "2021/src/",
-            "adventofcode\\Year2021\\Test\\": "2021/tests/",
-            "adventofcode\\Year2022\\": "2022/src/",
-            "adventofcode\\Year2022\\Test\\": "2022/tests/",
-            "adventofcode\\Year2023\\": "2023/src/",
-            "adventofcode\\Year2023\\Test\\": "2023/tests/",
-            "adventofcode\\Year2024\\": "2024/src/",
-            "adventofcode\\Year2024\\Test\\": "2024/tests/"
-        }
-    },
-    "config": {
-        "allow-plugins": {
-            "ergebnis/composer-normalize": true
-        }
+  "require": {
+    "php": ">=8.3",
+    "ext-ctype": "*"
+  },
+  "require-dev": {
+    "ergebnis/composer-normalize": "2.48.2",
+    "phpstan/phpstan": "2.1.20",
+    "phpunit/phpunit": "12.2.7",
+    "squizlabs/php_codesniffer": "3.7.2"
+  },
+  "autoload": {
+    "psr-4": {
+      "adventofcode\\Year2015\\": "2015/src/",
+      "adventofcode\\Year2015\\Test\\": "2015/tests/",
+      "adventofcode\\Year2018\\": "2018/src/",
+      "adventofcode\\Year2018\\Test\\": "2018/tests/",
+      "adventofcode\\Year2019\\": "2019/src/",
+      "adventofcode\\Year2019\\Test\\": "2019/tests/",
+      "adventofcode\\Year2020\\": "2020/src/",
+      "adventofcode\\Year2020\\Test\\": "2020/tests/",
+      "adventofcode\\Year2021\\": "2021/src/",
+      "adventofcode\\Year2021\\Test\\": "2021/tests/",
+      "adventofcode\\Year2022\\": "2022/src/",
+      "adventofcode\\Year2022\\Test\\": "2022/tests/",
+      "adventofcode\\Year2023\\": "2023/src/",
+      "adventofcode\\Year2023\\Test\\": "2023/tests/",
+      "adventofcode\\Year2024\\": "2024/src/",
+      "adventofcode\\Year2024\\Test\\": "2024/tests/",
+      "adventofcode\\Year2025\\": "2025/src/",
+      "adventofcode\\Year2025\\Test\\": "2025/tests/"
     }
+  },
+  "config": {
+    "allow-plugins": {
+      "ergebnis/composer-normalize": true
+    }
+  }
 }
