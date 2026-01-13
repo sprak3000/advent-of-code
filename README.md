@@ -21,7 +21,7 @@ that community.
 |-------:|:-------------:|:-------------:|:-------------:|:-------------:|:-------------:|:-------------:|:-------------:|:-------------:|:-------------:|:----:|:-------------:|
 | Day 01 | :star: :star: | :star: :star: | :star: :star: | :star: :star: | :star: :star: | :star: :star: | :star: :star: | :star: :star: | :star: :star: |      | :star: :star: |
 | Day 02 |               | :star: :star: | :star: :star: | :star: :star: | :star: :star: | :star: :star: |    :star:     | :star: :star: | :star: :star: |      | :star: :star: |
-| Day 03 |               | :star: :star: |               | :star: :star: | :star: :star: | :star: :star: |               | :star: :star: |               |      | :star: :star: |
+| Day 03 |    :star:     | :star: :star: |               | :star: :star: | :star: :star: | :star: :star: |               | :star: :star: |               |      | :star: :star: |
 | Day 04 |               |               |               | :star: :star: |               | :star: :star: |               | :star: :star: | :star: :star: |      | :star: :star: |
 | Day 05 |               |               |               | :star: :star: |               | :star: :star: |               |               | :star: :star: |      | :star: :star: |
 | Day 06 |               |               |               | :star: :star: |               | :star: :star: |               |               |               |      | :star: :star: |
